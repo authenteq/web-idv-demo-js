@@ -1,0 +1,77 @@
+.Results {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.Results-header {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 22px;
+  padding: 30px 30px 20px;
+  margin: 0;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.Results-panel {
+  margin: 0 auto;
+  width: 400px;
+  min-height: 500px;
+  background-color: rgba(255,255,255,1);
+
+  border-radius: 3px;
+  box-shadow: 0 4px 25px 0 rgba(0,0,0,0.1);
+}
+
+.Results-documents {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Results-imageContainer {
+  margin-left: 20px;
+}
+
+.Results-imageContainer:first-child {
+  margin-left: 0;
+}
+
+.Results-image {
+  flex-shrink: 1;
+  width: 100%;
+}
+
+.Results-buttonContainer {
+  border-top: 1px solid #EBEBEB;
+  padding: 20px 30px;
+}
+
+.Results-button,
+.Results-button:hover,
+.Results-button:focus {
+  display: block;
+  padding: 15px 0;
+
+  background: #F29E2E;
+  border-radius: 8px;
+
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  text-decoration: none;
+
+  text-align: center;
+
+  color: #FFFFFF;
+  box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.Results .Details {
+  margin: 0 30px 20px;
+}

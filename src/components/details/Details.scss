@@ -1,0 +1,36 @@
+.Details {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.Details-property {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 6px 0;
+
+  border-bottom: 1px solid rgb(235,235,235);
+}
+
+.Details-property:last-child {
+  border-bottom: none;
+}
+
+.Details-name,
+.Details-value {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 21px;
+
+  color: #454A51;
+}
+
+.Details-name {
+  font-weight: bold;
+}
+
+.Details-value {
+  text-align: right;
+}
