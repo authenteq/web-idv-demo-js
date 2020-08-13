@@ -17,16 +17,20 @@ class Results extends React.Component {
     const parsed = queryString.parse(this.props.location.search);
     const code = parsed.code;
 
-    var config = {
-      method: 'get',
-      url: `http://localhost:8888/results?code=${code}`,
-    };
-
-    axios(config).then(response => {
-      this.setState({
-        details: response.data.documentData,
+    if (code) {
+      var config = {
+        method: 'get',
+        url: `http://localhost:8888/results?code=${code}`,
+      };
+      axios(config).then(response => {
+        this.setState({
+          details: response.data.documentData,
+        });
       });
-    });
+    } else {
+      this.props.history.push('/');
+    }
+
   }
 
   dataUrl(imageObject) {
