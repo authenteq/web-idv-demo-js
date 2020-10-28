@@ -61,4 +61,4 @@ app.get('/results', (req, res) => {
   });
 });
 
-app.listen(port, () => console.log(`Demo server listening at http://localhost:${port}`))
+app.listen(port, () => console.log(`Demo server listening at http://localhost:${port}...`))
